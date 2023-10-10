@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наследие Беларуси</title>
+    <link rel="shortcut icon" href="icon.png" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            margin-top: 0;
+        }
+        #main {
+        background-image: url('1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+        width: 100%;
+        height: 800px;
+        top:0px;
+        left:0px;
+        }
+        #content {
+            float: right;
+            width: 30%;
+            font-size: 2rem
+        }
+        form {
+            padding-top: 10px;  
+            float: left;
+        }
+        #button1 {
+            width: 290px; height: 65px;
+            border-color: #bfbfbf;
+            border-radius: 40px;
+            border-width: 1px 1px 1px 1px;
+            font-size:90%;
+            color:#bfbfbf;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: solid;
+        }
+        #imag {
+            margin-top: 120px;
+            
+        }
+        img {
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+        #tex {
+            margin-top: 100px;
+            font-size: 1.5rem;
+            margin-left: 200px;
+            margin-right: 200px;
+            text-align:  center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #button2 {
+            width: 280px; height: 45px;
+            border-color: #bfbfbf;
+            border-radius: 20px;
+            border-width: 1px 1px 1px 1px;
+            font-size:120%;
+            color:#bfbfbf;
+            margin-bottom: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            border-style: solid;
+        }
+        #butt{
+            margin-top: 220px;
+            margin-left: 42%;
+            margin-right: 42%;
+        }
+        #menu__toggle {
+            opacity: 0;
+        }
+        .menu__btn {
+            display: flex; 
+            align-items: center;  
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #1d1b1b;
+        }.menu__btn > span::before {
+            content: '';
+            top: -8px;
+        }
+        .menu__btn > span::after {
+            content: '';
+            top: 8px;
+        }
+        .menu__box { 
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #ECEFF1;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        }
+        .menu__item {
+            display: block;
+            padding: 12px 24px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .menu__item:hover {
+            background-color: #CFD8DC;
+        }
+        #menu__toggle:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::before {
+            top: 0;         
+            transform: rotate(0);
+        }
+        #menu__toggle:checked ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+        #menu__toggle:checked ~ .menu__box {
+            visibility: visible;
+            left: 0;
+        }
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+            transition-duration: .25s;
+        }
+        .menu__box {
+            transition-duration: .25s;
+        }
+        .menu__item {
+            transition-duration: .25s;
+        }
+    </style>
+    
+
+</head>
+<body> 
+    <div id="main">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+            <ul class="menu__box">
+            <li><a class="menu__item" href="index.html">Главная</a></li>
+            <li><a class="menu__item" href="index2.html">Медицина</a></li>
+            <li><a class="menu__item" href="index3.html">Космос</a></li>
+            <li><a class="menu__item" href="index4.html">Охрана природы</a></li>
+            <li><a class="menu__item" href="index5.html">Робототехника</a></li>
+            </ul>
+        </div>
+    <div id="content"> 
+        <h1>
+            Наследие <br>
+            Беларуси
+        </h1>
+        <p>
+            Достижения республики Республики<br>
+            Беларусь за последние годы
+        </p>
+        <form action="index1.html" target="_blank">
+            <button id="button1" a href>Смотреть видео</button>
+        </form>       
+    </div>   
+    </div>
+    <div id="imag">
+        <img src="2.png">
+    </div>
+    <div id="tex">
+        <p>Развитие Беларуси происходит во многих сферах и это не остается незамеченным. Начиная с глобальных изменений, например, удобные современные технологии, ныне расположенные повсеместно, заканчивая улучшением медицины и экологии. Далее наша редакция с гордостью поделится с Вами действительно приятными новостями.</p>
+    </div>
+    <div id="butt">
+        <form action="index2.html" >
+            <button id="button2" a href>Смотреть дальше</button>
+        </form>    
+    </div>
+    
+</body>
+</html>
